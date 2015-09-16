@@ -2,6 +2,8 @@ package chapter1;
 
 public class Solution07 {
 	public static void rotateMatrix(int[][] matrix) {
+		//First rotate the matrix upside down
+		//Second do matrix transposition
 		int rows = matrix.length;
 		int columns = matrix[0].length;
 		for (int i = 0; i < rows / 2; i++) {
