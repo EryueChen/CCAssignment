@@ -4,6 +4,7 @@ import java.util.HashSet;
 
 public class Solution01 {
 	public static void removeDups(ListNode root) {
+		//Store the value of last node and skip if it is the same with last one
 		HashSet<Integer> set = new HashSet<Integer>();
 		ListNode previous = null;
 		ListNode node = root;

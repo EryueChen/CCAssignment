@@ -2,6 +2,8 @@ package chapter1;
 
 public class Solution05 {
 	public static boolean isOneAway(String str1, String str2) {
+		//If length difference is larger than 1, then false
+		//Find the first difference in character, compare whether the remainings are same
 		int len1 = str1.length();
 		int len2 = str2.length();
 		if (Math.abs(len1 - len2) > 1) return false;

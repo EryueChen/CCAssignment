@@ -2,13 +2,15 @@ package chapter2;
 
 public class Solution04 {
 	public static ListNode partition(ListNode root, int pivot) {
+		//Store two lists, one smaller than pivot value,
+		//the other larger or equal to pivot value
+		//Connect two lists
 		ListNode beforeStart = null;
 		ListNode beforeEnd = null;
 		ListNode afterStart = null;
 		ListNode afterEnd = null;
 		ListNode node = root;
 		while (node != null) {
-			
 			if (node.val < pivot) {
 				if (beforeStart == null) {
 					beforeStart = node;

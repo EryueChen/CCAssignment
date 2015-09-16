@@ -4,6 +4,10 @@ import java.util.Stack;
 
 public class Solution06 {
 	public static boolean isPalindrome(ListNode list) {
+		//Use two pointers to find the middle node of the list
+		//Use a stack to push the first half and pop the second half
+		//Skip the middle one if the list has odd length
+		//If stack is empty, then is palindrome
 		ListNode fast = list, slow = list;
 		Stack<Integer> stack = new Stack<Integer>();
 		while (fast != null && fast.next != null) {

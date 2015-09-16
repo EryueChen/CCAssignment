@@ -2,6 +2,7 @@ package chapter1;
 
 public class Solution03 {
 	public static void urlify(char[] str, int len) {
+		//To solve it in place, traverse the string from the end to beginning
 		int newlen = len - 1;
 		for (int i = 0; i < len; i++) {
 			if (str[i] == ' ') newlen += 2;

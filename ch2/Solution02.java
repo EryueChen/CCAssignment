@@ -2,6 +2,9 @@ package chapter2;
 
 public class Solution02 {
 	public static ListNode kthToLast(ListNode root, int k) {
+		//Let one pointer move k nodes first
+		//Two pointers then move together
+		//When one reaches the end, the other is kth to last
 		ListNode p1 = root, p2 = root;
 		while (k > 0) {
 			p1 = p1.next;

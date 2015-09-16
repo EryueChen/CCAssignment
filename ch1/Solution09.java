@@ -2,6 +2,8 @@ package chapter1;
 
 public class Solution09 {
 	public static boolean isRotation(String s1, String s2) {
+		//If concatenate the rotated string with itself,
+		//it must contain the original string
 		return isSubstring(s2, s1+s1);
 	}
 	

@@ -2,6 +2,9 @@ package chapter1;
 
 public class Solution06 {
 	public static String compression(String str) {
+		//Traverse the string and do reduce on the string
+		//If the character is different with the previous one,
+		//output the previous character and its count
 		char last = str.charAt(0);
 		int count = 1;
 		String compressed = "";

@@ -4,6 +4,9 @@ import java.util.HashSet;
 
 public class Solution04 {
 	public static boolean isPalindromePermutation(String str) {
+		//Add the character if it is the odd time 
+		//Remove the character if it is the even time
+		//There should be only one character with odd number of appearance
 		HashSet<Character> alphabet = new HashSet<Character>();
 		str = str.toLowerCase();
 		for (int i = 0; i < str.length(); i++) {

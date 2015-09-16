@@ -2,6 +2,11 @@ package chapter2;
 
 public class Solution08 {
 	public static ListNode detectCycle(ListNode list) {
+		//First use a fast pointer which moves two nodes at a time
+		//and a slow pointer which moves one node at a time
+		//If they meet at some point, there's a cycle
+		//Then use a pointer starting from the beginning of the list
+		//When they meet, that's the start point of the cycle
 		ListNode fast = list, slow = list;
 		if (list == null || list.next == null) return null;
 		while (slow.next != null && fast.next != null && fast.next.next != null) {

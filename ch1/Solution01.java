@@ -2,6 +2,8 @@ package chapter1;
 
 public class Solution01 {
 	public static boolean isUnique(String str) {
+		//Suppose all the characters are ASCII
+		//Store an array to mark number of appearance of each character
 		int[] alphabets = new int[256];
 		for (int i = 0; i < str.length(); i++) {
 			char c = str.charAt(i);

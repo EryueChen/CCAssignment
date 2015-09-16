@@ -2,6 +2,8 @@ package chapter2;
 
 public class Solution03 {
 	public static void deleteMiddle(ListNode root, ListNode middle) {
+		//Change the value of middle to the value of next node
+		//Delete the next node
 		ListNode next = middle.next;
 		middle.val = next.val;
 		middle.next = next.next;

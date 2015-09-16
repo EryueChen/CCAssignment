@@ -2,6 +2,9 @@ package chapter1;
 
 public class Solution02 {
 	public static boolean isPermutation(String str1, String str2) {
+		//Use an array to add appearances of str1 characters 
+		//and remove appearances of str2 characters
+		//If the array has all zeros, they are permutation strings
 		if (str1.length() != str2.length()) return false;
 		int[] alphabet = new int[256];
 		for (int i = 0; i < str2.length(); i++) {

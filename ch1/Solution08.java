@@ -2,6 +2,8 @@ package chapter1;
 
 public class Solution08 {
 	public static void zeroMatrix(int[][] matrix) {
+		//First rotate the matrix upside down
+		//Second do matrix transposition
 		int rows = matrix.length;
 		int columns = matrix[0].length;
 		int row = 1, column = 1;

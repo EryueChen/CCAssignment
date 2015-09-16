@@ -7,6 +7,7 @@ class PartialSum {
 
 public class Solution05 {
 	public static ListNode addLists(ListNode list1, ListNode list2, int carry) {
+		//Use recursive solution to add two values and the carry together
 		if (list1 == null && list2 == null && carry == 0) {
 			return null;
 		}
@@ -21,8 +22,6 @@ public class Solution05 {
 		}
 		return result;
 	}
-	
-	
 	
 	public static int length(ListNode node) {
 		int count = 0;
@@ -63,6 +62,8 @@ public class Solution05 {
 	}
 	
 	public static ListNode addListsForward(ListNode list1, ListNode list2) {
+		//First use zero paddings to make two lists have same length
+		//Then add the lists recursively, insert the carry and results before it
 		int len1 = length(list1);
 		int len2 = length(list2);
 		if (len1 < len2) {
